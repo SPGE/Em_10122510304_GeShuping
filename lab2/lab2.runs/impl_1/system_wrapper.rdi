@@ -1,0 +1,218 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Wed Jun 24 15:42:18 2015
+# Process ID: 1900
+# Log file: E:/lab/embedded/new/lab2/lab2.runs/impl_1/system_wrapper.rdi
+# Journal file: E:/lab/embedded/new/lab2/lab2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+WARNING: [Common 17-301] Failed to get a license: Implementation
+WARNING: [Vivado 15-19] WARNING: No 'Implementation' license found. This message may be safely ignored if a Vivado WebPACK or device-locked license, common for board kits, will be used during implementation.
+
+Attempting to get a license: Synthesis
+WARNING: [Common 17-301] Failed to get a license: Synthesis
+Loading parts and site information from D:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source system_wrapper.tcl -notrace
+Command: open_checkpoint E:/lab/embedded/new/lab2/lab2.runs/impl_1/system_wrapper.dcp
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2013.4
+Loading clock regions from D:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z010/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z010/ClockBuffers.xml
+Loading clock placement rules from D:/Xilinx/Vivado/2013.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from D:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from D:/Xilinx/Vivado/2013.4/data\parts/xilinx/zynq/zynq/xc7z010/clg400/Package.xml
+Loading io standards from D:/Xilinx/Vivado/2013.4/data\./parts/xilinx/zynq/IOStandards.xml
+Parsing XDC File [E:/lab/embedded/new/lab2/lab2.runs/impl_1/.Xil/Vivado-1900-/dcp/system_wrapper_board.xdc]
+Finished Parsing XDC File [E:/lab/embedded/new/lab2/lab2.runs/impl_1/.Xil/Vivado-1900-/dcp/system_wrapper_board.xdc]
+Parsing XDC File [E:/lab/embedded/new/lab2/lab2.runs/impl_1/.Xil/Vivado-1900-/dcp/system_wrapper_early.xdc]
+Finished Parsing XDC File [E:/lab/embedded/new/lab2/lab2.runs/impl_1/.Xil/Vivado-1900-/dcp/system_wrapper_early.xdc]
+Parsing XDC File [E:/lab/embedded/new/lab2/lab2.runs/impl_1/.Xil/Vivado-1900-/dcp/system_wrapper.xdc]
+Finished Parsing XDC File [E:/lab/embedded/new/lab2/lab2.runs/impl_1/.Xil/Vivado-1900-/dcp/system_wrapper.xdc]
+Reading XDEF placement.
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 839.141 ; gain = 0.000
+Restoring placement.
+Restored 139 out of 139 XDEF sites from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: 
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-484] Checkpoint was created with build 353583
+open_checkpoint: Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 839.141 ; gain = 657.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.484 . Memory (MB): peak = 842.348 ; gain = 3.207
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 20936332d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.952 . Memory (MB): peak = 847.207 ; gain = 4.859
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+INFO: [Opt 31-10] Eliminated 172 cells.
+Phase 2 Constant Propagation | Checksum: 2a88630b0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 847.207 ; gain = 4.859
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 196 unconnected nets.
+INFO: [Opt 31-11] Eliminated 193 unconnected cells.
+Phase 3 Sweep | Checksum: 2139ccfb3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 847.207 ; gain = 4.859
+Ending Logic Optimization Task | Checksum: 2139ccfb3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 847.207 ; gain = 4.859
+Implement Debug Cores | Checksum: 20936332d
+Logic Optimization | Checksum: 20936332d
+
+Starting Power Optimization Task
+Ending Power Optimization Task | Checksum: 2139ccfb3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 847.207 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.405 . Memory (MB): peak = 848.898 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 851.895 ; gain = 0.000
+
+Phase 1.1.1 Mandatory Logic Optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s).
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.016 . Memory (MB): peak = 851.895 ; gain = 0.000
+Phase 1.1.1 Mandatory Logic Optimization | Checksum: 14deb2d01
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.328 . Memory (MB): peak = 851.895 ; gain = 0.000
+
+Phase 1.1.2 Build Super Logic Region (SLR) Database
+Phase 1.1.2 Build Super Logic Region (SLR) Database | Checksum: 14deb2d01
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.359 . Memory (MB): peak = 851.895 ; gain = 0.000
+
+Phase 1.1.3 Add Constraints
+Phase 1.1.3 Add Constraints | Checksum: 14deb2d01
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.359 . Memory (MB): peak = 851.895 ; gain = 0.000
+
+Phase 1.1.4 Build Macros
+Phase 1.1.4 Build Macros | Checksum: 1e5806e0c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 851.895 ; gain = 0.000
+
+Phase 1.1.5 Implementation Feasibility check
+Phase 1.1.5 Implementation Feasibility check | Checksum: 1e5806e0c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 851.895 ; gain = 0.000
+
+Phase 1.1.6 Pre-Place Cells
+Phase 1.1.6 Pre-Place Cells | Checksum: 1e5806e0c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 851.895 ; gain = 0.000
+
+Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-372] Bank.34 has terminals with incompatible standards:
+Incompatible Pair of IO Standards: LVCMOS33 and LVCMOS18
+ The following  terminals correspond to these IO Standards:
+SioStd: LVCMOS33   VCCO = 3.3 Termination: 0  TermDir:  In   Bank: 34 Placed :
+	Term: btns_4bit_tri_i[0]
+	Term: btns_4bit_tri_i[1]
+	Term: btns_4bit_tri_i[2]
+	Term: btns_4bit_tri_i[3]
+SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  Bank: 34 Drv: 12 Placed :
+	Term: sw_4bit_tri_o[0]
+	Term: sw_4bit_tri_o[1]
+	Term: sw_4bit_tri_o[2]
+	Term: sw_4bit_tri_o[3]
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     8 | LVCMOS33(4)  LVCMOS18(4)                                               |                                          |        |  +1.80 |    YES |     |
+| 35 |    50 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |     8 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | btns_4bit_tri_i[0]   | LVCMOS33        | IOB_X0Y9             | R18                  |                      |
+|        | btns_4bit_tri_i[1]   | LVCMOS33        | IOB_X0Y1             | P16                  |                      |
+|        | btns_4bit_tri_i[2]   | LVCMOS33        | IOB_X0Y14            | V16                  |                      |
+|        | btns_4bit_tri_i[3]   | LVCMOS33        | IOB_X0Y36            | Y16                  |                      |
+|        | sw_4bit_tri_o[0]     | LVCMOS18        | IOB_X0Y37            | R14                  | *                    |
+|        | sw_4bit_tri_o[1]     | LVCMOS18        | IOB_X0Y38            | P14                  |                      |
+|        | sw_4bit_tri_o[2]     | LVCMOS18        | IOB_X0Y39            | T15                  |                      |
+|        | sw_4bit_tri_o[3]     | LVCMOS18        | IOB_X0Y40            | T14                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.1.7 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1e5806e0c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 851.895 ; gain = 0.000
+Phase 1.1 Placer Initialization Core | Checksum: 1e5806e0c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 851.895 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1e5806e0c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 851.895 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1e5806e0c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 851.895 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+
+    while executing
+"place_design "
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 24 15:43:36 2015...
